@@ -1,0 +1,6 @@
+{
+  "name": "LL Towing & Auto Repair",
+  "description": "Reliable 24/7 towing, roadside assistance, and automotive repair serving Maryland, Washington DC, and Northern Virginia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

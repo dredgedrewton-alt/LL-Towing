@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-red: #C62828;
+  --color-brand-red-hover: #B71C1C;
+  --color-brand-red-dark: #8E1818;
+  --color-brand-red-light: #FFEBEE;
+  --color-brand-charcoal: #17191D;
+  --color-brand-charcoal-light: #242830;
+  --color-brand-charcoal-card: #1D2128;
+  --color-brand-charcoal-dark: #0F1012;
+  --color-brand-offwhite: #F5F6F7;
+  --color-brand-offwhite-surface: #EBECEF;
+  --color-brand-steel: #737B85;
+  --color-brand-steel-light: #A3AAB2;
+  --color-brand-steel-dark: #494F57;
+  --color-brand-border: #E2E4E8;
+  --color-brand-border-dark: #2B303A;
+
+  --font-heading: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  --font-body: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --background: #FFFFFF;
+  --foreground: #17191D;
+}
+
+/* Ensure smooth scrolling and accessible baseline typography */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-body);
+  color: #17191D;
+  background-color: #FFFFFF;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* Focus styles for keyboard accessibility */
+:focus-visible {
+  outline: 2px solid #C62828;
+  outline-offset: 2px;
+}
+
+/* Accessible reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Prevent unwanted callout on mobile touch */
+a, button {
+  -webkit-tap-highlight-color: transparent;
+}
