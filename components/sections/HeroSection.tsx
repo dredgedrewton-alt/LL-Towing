@@ -38,17 +38,17 @@ export function HeroSection({ onOpenQuote }: HeroSectionProps) {
               </div>
 
               {/* Exact Requested Headline */}
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#17191D] tracking-tight text-balance leading-[1.12] mb-4 sm:mb-5">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#17191D] tracking-tight text-balance leading-[1.12] mb-3 sm:mb-4">
                 Stranded? <span className="text-[#C62828]">We&apos;re Here to Help.</span>
               </h1>
 
-              {/* Exact Requested Supporting Message */}
-              <p className="text-base sm:text-lg text-[#494F57] leading-relaxed mb-6 sm:mb-8 max-w-2xl">
-                Professional towing, roadside assistance, and auto repair serving Maryland, DC, and Virginia. Whether you need an emergency flatbed on the Capital Beltway or diagnostic repair at our shop, our operators arrive ready to assist.
+              {/* One Concise Supporting Sentence */}
+              <p className="text-base sm:text-lg text-[#494F57] leading-relaxed mb-6 max-w-2xl">
+                Professional towing, roadside assistance, and auto repair serving Maryland, Washington DC, and Northern Virginia with 24/7 live dispatch.
               </p>
 
               {/* Primary Call Action & Secondary Action Block */}
-              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-6 sm:mb-8">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-6">
                 <Button
                   variant="emergency"
                   size="lg"

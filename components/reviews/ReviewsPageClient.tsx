@@ -52,14 +52,14 @@ export function ReviewsPageClient() {
               What Real Drivers Say About Our Service.
             </h1>
 
-            <p className="text-base sm:text-lg text-[#494F57] leading-relaxed mb-6">
-              When you are broken down on a high-speed interstate or locked out of your car in bad weather, prompt communication and careful equipment handling matter most. Read authentic customer feedback from motorists across the DMV region.
+            <p className="text-base sm:text-lg text-[#494F57] leading-relaxed mb-4">
+              Verified feedback from motorists across Maryland, Washington DC, and Northern Virginia who relied on our team for towing, roadside recovery, and auto repair.
             </p>
 
-            {/* Reputation Context */}
-            <div className="p-4 rounded-xl bg-[#F5F6F7] border border-[#E2E4E8] text-xs text-[#494F57] leading-relaxed max-w-2xl">
-              <strong className="text-[#17191D]">Historical Review Record:</strong>{' '}
-              {businessConfig.reputation.label}. Testimonials reflect verified experiences of stranded motorists receiving towing, roadside jump-starts, tire changes, lockouts, and mechanical repair.
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F5F6F7] border border-[#E2E4E8] text-xs font-semibold text-[#17191D]">
+              <span className="text-[#C62828] font-bold">★ 4.9 / 5.0</span>
+              <span className="text-[#A3AAB2]">·</span>
+              <span>161 Verified Google Reviews</span>
             </div>
           </div>
         </Container>

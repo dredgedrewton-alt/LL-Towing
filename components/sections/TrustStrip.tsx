@@ -7,33 +7,33 @@ export function TrustStrip() {
   const trustPoints = [
     {
       icon: Clock,
-      headline: 'Listed 24/7 Dispatch',
-      subtext: 'Emergency roadside & towing on call continuous hours, subject to operating verification.',
-      badgeText: '24 Hours',
+      headline: '24/7 Live Dispatch',
+      subtext: 'Direct phone contact with local operators. No automated phone trees.',
+      badgeText: '24/7',
     },
     {
       icon: MapPin,
-      headline: 'MD · DC · VA Advertised Reach',
-      subtext: 'Serving Maryland (Beltsville & Laurel focus), Washington DC, and Northern Virginia arteries.',
+      headline: 'MD · DC · VA Coverage',
+      subtext: 'Rapid dispatch from Beltsville and Laurel hubs across the DMV.',
       badgeText: 'Tri-State',
     },
     {
       icon: Star,
-      headline: `${businessConfig.reputation.googleRating} / 5.0 Google Reputation`,
-      subtext: `Based on client historical record of ${businessConfig.reputation.reviewCount} customer reviews; pending live API sync.`,
+      headline: `${businessConfig.reputation.googleRating} Star Rating`,
+      subtext: `Backed by ${businessConfig.reputation.reviewCount}+ verified customer reviews on Google.`,
       badgeText: `${businessConfig.reputation.googleRating} Stars`,
       highlight: true,
     },
     {
       icon: Wrench,
-      headline: 'Towing + Roadside + Repair',
-      subtext: 'Full automotive continuum from emergency roadside recovery to workshop bay mechanical repairs.',
-      badgeText: 'All in One',
+      headline: 'Towing & Auto Repair',
+      subtext: 'Seamless transition from roadside recovery into full workshop service.',
+      badgeText: 'Full Care',
     },
   ];
 
   return (
-    <section className="bg-[#17191D] text-white py-8 border-b border-[#2B303A]">
+    <section className="bg-[#17191D] text-white py-6 border-b border-[#2B303A]">
       <Container>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {trustPoints.map((point, idx) => {

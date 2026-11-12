@@ -16,11 +16,11 @@ export function CoreServicesSection({ onOpenQuote }: CoreServicesSectionProps) {
       id: 'towing',
       title: 'Towing Services',
       kicker: 'Damage-Free Recovery',
-      desc: 'Rapid flatbed, wheel-lift, and specialty vehicle transport for disabled sedans, SUVs, luxury cars, and light commercial vans.',
+      desc: 'Hydraulic flatbed and wheel-lift towing for passenger cars, AWD SUVs, luxury exotics, and fleet vehicles.',
       features: [
         'Hydraulic flatbed decks for zero ground dragging',
         'Soft-strap wheel rigging for luxury & AWD models',
-        'Direct delivery to home, dealership, or repair shop',
+        'Direct delivery to home, dealer, or our workshop',
       ],
       icon: Truck,
       imageSlotId: 'flatbedTowing',
@@ -31,7 +31,7 @@ export function CoreServicesSection({ onOpenQuote }: CoreServicesSectionProps) {
       id: 'roadside',
       title: 'Roadside Assistance',
       kicker: 'Prompt Roadside Relief',
-      desc: 'Immediate on-shoulder support for dead batteries, locked vehicle keys, flat tires, and fuel starvation across MD, DC, and VA.',
+      desc: 'Fast on-scene assistance for dead batteries, locked-in keys, flat tires, and fuel delivery across MD, DC, and VA.',
       features: [
         'Commercial booster pack jump-starts & battery tests',
         'Gentle non-marring lockout door entry',
@@ -46,11 +46,11 @@ export function CoreServicesSection({ onOpenQuote }: CoreServicesSectionProps) {
       id: 'auto-repair',
       title: 'Auto Repair & Maintenance',
       kicker: 'Workshop Mechanical Bays',
-      desc: 'Full-service automotive workshop diagnostics and repairs—from brake pad overhauls to computerized OBD-II scans and preventative care.',
+      desc: 'Full-service automotive diagnostics, brake overhauls, suspension work, and preventative care in our Beltsville/Laurel repair facility.',
       features: [
-        'State-of-the-art diagnostic computer scans',
+        'OBD-II computerized diagnostic scans',
         'Brake pads, rotors, drums, and hydraulic lines',
-        'Suspension, steering, and seasonal safety tune-ups',
+        'Suspension, steering, and seasonal tune-ups',
       ],
       icon: Wrench,
       imageSlotId: 'autoRepairFacility',
@@ -61,9 +61,9 @@ export function CoreServicesSection({ onOpenQuote }: CoreServicesSectionProps) {
       id: 'commercial',
       title: 'Commercial Vehicle Services',
       kicker: 'Property & Fleet Solutions',
-      desc: 'Orderly private property impounds, commercial lot enforcement, and compliant vehicle repossession for property owners and lenders.',
+      desc: 'Lawful private property impounds, parking lot enforcement, and compliant collateral repossession for property owners and lenders.',
       features: [
-        'Complete photographic logging & statutory compliance',
+        'Photographic condition logging & compliance',
         'Dedicated dispatch line for property managers',
         'Secured, monitored storage retention facility',
       ],
@@ -75,23 +75,23 @@ export function CoreServicesSection({ onOpenQuote }: CoreServicesSectionProps) {
   ];
 
   return (
-    <section id="services" className="py-16 sm:py-20 lg:py-24 bg-[#F5F6F7] border-b border-[#E2E4E8]">
+    <section id="services" className="py-12 sm:py-16 bg-[#F5F6F7] border-b border-[#E2E4E8]">
       <Container>
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-10 gap-6">
           <SectionHeading
             kicker="01. Core Services"
-            title="Comprehensive Automotive Care Across Four Dedicated Pillars."
-            description="Whether you need emergency roadside recovery or scheduled workshop diagnostics, LL Towing & Auto Repair delivers dependable, transparent service."
+            title="Comprehensive Automotive Care."
+            description="From emergency highway recovery to mechanical workshop diagnostics, our team delivers dependable, transparent service."
             className="mb-0"
           />
 
           <div className="shrink-0 self-start md:self-end">
             <a
               href={businessConfig.contact.phone.telHref}
-              className="inline-flex items-center gap-2 text-sm font-bold text-[#C62828] hover:text-[#B71C1C] transition-colors"
+              className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[#C62828] hover:text-[#B71C1C] transition-colors"
             >
               <PhoneCall className="w-4 h-4" />
-              <span>Need immediate help? Call {businessConfig.contact.phone.display}</span>
+              <span>Need help? Call {businessConfig.contact.phone.display}</span>
             </a>
           </div>
         </div>

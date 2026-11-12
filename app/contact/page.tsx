@@ -126,10 +126,10 @@ export default function ContactPage() {
               <div className="p-6 rounded-2xl bg-white border border-[#E2E4E8] space-y-4">
                 <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#17191D]">
                   <Clock className="w-4 h-4 text-[#C62828]" />
-                  <span>Business Operating Information</span>
+                  <span>Hours & Dispatch Channels</span>
                 </div>
 
-                <div className="space-y-4 text-xs sm:text-sm">
+                <div className="space-y-3.5 text-xs sm:text-sm">
                   <div className="pb-3 border-b border-[#EEF0F3]">
                     <div className="flex items-center justify-between">
                       <span className="font-bold text-[#17191D]">Emergency Towing & Roadside</span>
@@ -138,59 +138,37 @@ export default function ContactPage() {
                       </span>
                     </div>
                     <p className="text-xs text-[#737B85] mt-1">
-                      Continuous on-call dispatch for highway breakdowns, collisions, lockouts, and tire service across MD, DC, and VA.
+                      Continuous live dispatch for breakdowns, accidents, lockouts, and tire service across MD, DC, and VA.
                     </p>
                   </div>
 
                   <div className="pb-3 border-b border-[#EEF0F3]">
                     <div className="flex items-center justify-between">
-                      <span className="font-bold text-[#17191D]">Automotive Repair & Workshop Bays</span>
+                      <span className="font-bold text-[#17191D]">Auto Repair Workshop Bays</span>
                       <span className="text-[11px] font-semibold text-[#494F57] bg-[#F5F6F7] px-2 py-0.5 rounded">
                         Daytime Schedule
                       </span>
                     </div>
                     <p className="text-xs text-[#737B85] mt-1">
-                      Mechanical bay inspections, diagnostics, brakes, suspension, and maintenance. Call ahead for bay availability.
+                      Diagnostics, brakes, suspension, and mechanical repairs. Appointments recommended.
                     </p>
                   </div>
 
                   <div>
                     <div className="flex items-center justify-between">
-                      <span className="font-bold text-[#17191D]">Commercial Property Management</span>
+                      <span className="font-bold text-[#17191D]">Commercial Accounts & Impounds</span>
                       <span className="text-[11px] font-semibold text-[#494F57] bg-[#F5F6F7] px-2 py-0.5 rounded">
                         Direct Account Rep
                       </span>
                     </div>
                     <p className="text-xs text-[#737B85] mt-1">
-                      HOA, apartment, and shopping center impound agreements, compliant signage, and designated patrol.
+                      HOA, retail parking enforcement agreements, and lender repossession support.
                     </p>
                   </div>
                 </div>
               </div>
 
-              {/* Commercial Inquiries Box */}
-              <div className="p-6 rounded-2xl bg-white border border-[#E2E4E8]">
-                <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#17191D] mb-2">
-                  <Building2 className="w-4 h-4 text-[#C62828]" />
-                  <span>Property Managers & Lenders</span>
-                </div>
-                <h4 className="text-base font-bold text-[#17191D] mb-1">
-                  Commercial Towing & Impound Accounts
-                </h4>
-                <p className="text-xs text-[#494F57] leading-relaxed mb-4">
-                  Require zero-cost private property impounds, parking space enforcement, or collateral vehicle repossession? Talk directly to our account supervisor.
-                </p>
-                <a
-                  href={businessConfig.contact.phone.telHref}
-                  data-track-cta="call-dispatch-contact-commercial"
-                  className="inline-flex items-center gap-1.5 text-xs font-bold text-[#C62828] hover:underline"
-                >
-                  <Phone className="w-3.5 h-3.5" />
-                  <span>Call Commercial Dispatch: (240) 424-8226</span>
-                </a>
-              </div>
-
-              {/* Physical Location Card with Official Google Maps Slot & Strict Unverified Address Handling */}
+              {/* Physical Location Card */}
               <BusinessLocationCard />
             </div>
 

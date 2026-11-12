@@ -10,7 +10,7 @@ interface FinalCTASectionProps {
 
 export function FinalCTASection({ onOpenQuote }: FinalCTASectionProps) {
   return (
-    <section className="relative overflow-hidden py-16 sm:py-20 lg:py-24 bg-[#17191D] text-white border-b border-[#2B303A]">
+    <section className="relative overflow-hidden py-12 sm:py-16 bg-[#17191D] text-white border-b border-[#2B303A]">
       {/* Background radial glow */}
       <div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-[#C62828]/15 blur-3xl pointer-events-none rounded-full"
@@ -18,32 +18,31 @@ export function FinalCTASection({ onOpenQuote }: FinalCTASectionProps) {
       />
 
       <Container>
-        <div className="relative z-10 max-w-3xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#EF5350] mb-3">
+        <div className="relative z-10 max-w-2xl mx-auto text-center">
+          <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#EF5350] mb-2.5">
             <ShieldAlert className="w-4 h-4" />
-            <span>24/7 Roadside Assistance & Workshop Appointments</span>
+            <span>24/7 Roadside Response & Workshop Bays</span>
           </div>
 
-          {/* Exact Requested Headline */}
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight text-balance mb-4 leading-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight text-balance mb-3 leading-tight">
             Need Help With Your Vehicle?
           </h2>
 
-          <p className="text-base sm:text-lg text-[#A3AAB2] leading-relaxed mb-8 max-w-2xl mx-auto text-balance">
-            Whether you are stranded right now and require emergency roadside towing, or you want to discuss mechanical repair services with our workshop team—we are here to help.
+          <p className="text-sm sm:text-base text-[#A3AAB2] leading-relaxed mb-6 max-w-xl mx-auto text-balance">
+            Speak directly with our local Maryland/DC dispatch desk for immediate roadside recovery or request a service quote.
           </p>
 
-          {/* Exact Requested Primary & Secondary CTAs */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          {/* Primary & Secondary CTAs */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5">
             <Button
               variant="emergency"
               size="lg"
               href={businessConfig.contact.phone.telHref}
               data-track-cta="call-dispatch-final-cta"
-              className="w-full sm:w-auto text-base py-3.5 px-7"
+              className="w-full sm:w-auto text-base py-3 px-6"
             >
-              <Phone className="w-5 h-5 mr-2.5" />
-              <span>Call +1 240-424-8226</span>
+              <Phone className="w-5 h-5 mr-2" />
+              <span>Call {businessConfig.contact.phone.display}</span>
             </Button>
 
             <Button

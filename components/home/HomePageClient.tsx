@@ -6,11 +6,9 @@ import { HeroSection } from '@/components/sections/HeroSection';
 import { TrustStrip } from '@/components/sections/TrustStrip';
 import { CoreServicesSection } from '@/components/sections/CoreServicesSection';
 import { WhyChooseSection } from '@/components/sections/WhyChooseSection';
-import { HowItWorksSection } from '@/components/sections/HowItWorksSection';
 import { FeaturedRoadWorkSection } from '@/components/sections/FeaturedRoadWorkSection';
 import { CustomerReviewsSection } from '@/components/sections/CustomerReviewsSection';
 import { ServiceCoverageSection } from '@/components/sections/ServiceCoverageSection';
-import { AutoRepairCrossSellSection } from '@/components/sections/AutoRepairCrossSellSection';
 import { FinalCTASection } from '@/components/sections/FinalCTASection';
 import { UnresolvedDataNotice } from '@/components/ui/UnresolvedDataNotice';
 import { QuoteModal } from '@/components/ui/QuoteModal';
@@ -27,34 +25,28 @@ export function HomePageClient() {
         </Container>
       </div>
 
-      {/* SECTION 1 — HERO (Emergency Motorist Focus & Above-The-Fold Call Action) */}
+      {/* SECTION 1 — HERO */}
       <HeroSection onOpenQuote={() => setIsQuoteOpen(true)} />
 
-      {/* SECTION 2 — TRUST STRIP (24h availability, Tri-state reach, 4.9 rating, Repair continuum) */}
+      {/* SECTION 2 — TRUST STRIP */}
       <TrustStrip />
 
-      {/* SECTION 3 — CORE SERVICES (Towing, Roadside, Auto Repair, Commercial Services) */}
+      {/* SECTION 3 — CORE SERVICES */}
       <CoreServicesSection onOpenQuote={() => setIsQuoteOpen(true)} />
 
-      {/* SECTION 4 — WHY CHOOSE LL TOWING? (6 Evidence-led Customer Feedback Themes) */}
+      {/* SECTION 4 — WHY CHOOSE LL TOWING */}
       <WhyChooseSection />
 
-      {/* SECTION 5 — HOW IT WORKS (3-Step Simple Roadside Assistance Process) */}
-      <HowItWorksSection />
-
-      {/* SECTION 6 — FEATURED ROAD WORK (Responsive Photographic Operational Gallery) */}
+      {/* SECTION 5 — FEATURED ROAD WORK (Authentic Photography Gallery) */}
       <FeaturedRoadWorkSection />
 
-      {/* SECTION 7 — CUSTOMER REVIEWS (Speed, Pricing, Professionalism, Communication) */}
+      {/* SECTION 6 — CUSTOMER REVIEWS */}
       <CustomerReviewsSection />
 
-      {/* SECTION 8 — SERVICE COVERAGE (Maryland: Beltsville & Laurel, DC, and Northern Virginia) */}
+      {/* SECTION 7 — SERVICE COVERAGE */}
       <ServiceCoverageSection onOpenQuote={() => setIsQuoteOpen(true)} />
 
-      {/* SECTION 9 — AUTO REPAIR CROSS-SELL ("More Than a Tow Truck") */}
-      <AutoRepairCrossSellSection onOpenQuote={() => setIsQuoteOpen(true)} />
-
-      {/* SECTION 10 — FINAL CTA ("Need Help With Your Vehicle?") */}
+      {/* SECTION 8 — FINAL HIGH-IMPACT CTA */}
       <FinalCTASection onOpenQuote={() => setIsQuoteOpen(true)} />
 
       {/* Interactive Service Quote Modal */}

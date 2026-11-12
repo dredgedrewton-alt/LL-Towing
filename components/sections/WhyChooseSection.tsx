@@ -15,74 +15,59 @@ export function WhyChooseSection() {
   const customerThemes = [
     {
       icon: PhoneForwarded,
-      title: 'Responsive Assistance',
-      theme: 'Speed & Accessibility',
+      title: 'Responsive Dispatch',
+      theme: 'Speed & Direct Contact',
       description:
-        'When you call, a knowledgeable local operator answers directly. No navigating automated phone trees or robotic switchboards when you are stranded in active traffic.',
+        'A local operator answers your call directly. No robotic switchboards or multi-step menus when you need immediate help in traffic.',
       proofPoint: 'Direct telephone line connected 24/7 at (240) 424-8226.',
     },
     {
       icon: DollarSign,
-      title: 'Clear Pricing Communication',
-      theme: 'Transparent Quotes',
+      title: 'Transparent Pricing',
+      theme: 'No Hidden Fees',
       description:
-        'We review your service details and provide an upfront price explanation before your vehicle is hooked or transported. No surprise per-mile surcharges or concealed fees.',
-      proofPoint: 'Upfront fee breakdown confirmed with dispatch prior to departure.',
-    },
-    {
-      icon: HeartHandshake,
-      title: 'Professional & Respectful Treatment',
-      theme: 'Calm Demeanor',
-      description:
-        'Car breakdowns and accidents are jarring and frustrating. Our operators arrive with patience, courtesy, and a priority on your personal safety first.',
-      proofPoint: 'Customer reviews consistently cite reassuring on-scene communication.',
+        'Clear, upfront rate quotes confirmed before our trucks roll. No surprise per-mile surcharges or concealed hook-up fees.',
+      proofPoint: 'Transparent pricing explained before departure.',
     },
     {
       icon: ShieldCheck,
-      title: 'Careful Vehicle Handling',
+      title: 'Professional Vehicle Handling',
       theme: 'Damage-Free Rigging',
       description:
-        'We treat every vehicle—from daily drivers and lowered sports coupes to AWD SUVs—with meticulous care. We use soft-strap tire harnesses and low-angle flatbeds.',
-      proofPoint: 'Strict adherence to zero-chassis-dragging recovery standards.',
+        'Hydraulic slide-back flatbeds and non-marring soft-strap tire harnesses designed specifically for AWD, low-clearance, and luxury vehicles.',
+      proofPoint: 'Zero-chassis-dragging recovery standards.',
     },
     {
-      icon: CheckCheck,
-      title: 'Reliable Service',
-      theme: 'Dependability',
+      icon: HeartHandshake,
+      title: 'Reliable Customer Support',
+      theme: 'Reassurance & Care',
       description:
-        'Equipped for rain, heat, and night emergencies across Maryland, DC, and Virginia highways. Our recovery units are maintained for dependable field duty.',
-      proofPoint: 'Proven track record documented across 161 verified customer reviews.',
-    },
-    {
-      icon: MessageSquareQuote,
-      title: 'Helpful Customer Communication',
-      theme: 'Continuous Updates',
-      description:
-        'From coordinating exact highway mile markers to confirming delivery at your repair shop or residence, we keep you informed throughout the entire recovery process.',
-      proofPoint: 'Seamless SMS coordinate verification and dispatch updates.',
+        'Courteous, professional operators prioritize your personal safety on-scene and keep you informed until your vehicle is safely delivered.',
+      proofPoint: 'Documented across 160+ verified customer reviews.',
     },
   ];
 
   return (
-    <section className="py-16 sm:py-20 lg:py-24 bg-white border-b border-[#E2E4E8]">
+    <section className="py-12 sm:py-16 bg-white border-b border-[#E2E4E8]">
       <Container>
         <SectionHeading
-          kicker="02. Customer Evidence"
+          kicker="02. Customer Benefits"
           title="Why Drivers Choose LL Towing & Auto Repair."
-          description="Rather than relying on generic promises, our service values reflect the genuine feedback consistently shared by motorists across Maryland, DC, and Virginia."
+          description="Clear communication, damage-free vehicle handling, and upfront pricing across Maryland, DC, and Northern Virginia."
+          className="mb-8"
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {customerThemes.map((item, idx) => {
             const Icon = item.icon;
             return (
               <div
                 key={idx}
-                className="p-6 sm:p-7 rounded-xl bg-[#F5F6F7] border border-[#E2E4E8] flex flex-col justify-between"
+                className="p-5 sm:p-6 rounded-xl bg-[#F5F6F7] border border-[#E2E4E8] flex flex-col justify-between"
               >
                 <div>
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-xs font-bold uppercase tracking-wider text-[#C62828]">
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="text-[11px] font-bold uppercase tracking-wider text-[#C62828]">
                       {item.theme}
                     </span>
                     <div className="w-8 h-8 rounded-lg bg-white border border-[#E2E4E8] flex items-center justify-center text-[#17191D]">
@@ -90,16 +75,16 @@ export function WhyChooseSection() {
                     </div>
                   </div>
 
-                  <h3 className="text-lg font-bold text-[#17191D] mb-2 leading-snug">
+                  <h3 className="text-base font-bold text-[#17191D] mb-1.5 leading-snug">
                     {item.title}
                   </h3>
 
-                  <p className="text-sm text-[#494F57] leading-relaxed mb-6">
+                  <p className="text-xs sm:text-sm text-[#494F57] leading-relaxed mb-4">
                     {item.description}
                   </p>
                 </div>
 
-                <div className="pt-4 border-t border-[#E2E4E8] text-xs text-[#737B85] flex items-center gap-1.5 font-medium">
+                <div className="pt-3 border-t border-[#E2E4E8] text-[11px] text-[#737B85] flex items-center gap-1.5 font-medium">
                   <span className="w-1.5 h-1.5 rounded-none bg-[#17191D] shrink-0" />
                   <span>{item.proofPoint}</span>
                 </div>
